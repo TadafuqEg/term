@@ -1,9 +1,15 @@
+import 'dart:ui';
+
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:term/Feutcher/view/screens/services/View/widgets/btn/btnservice.dart';
 import 'package:term/Feutcher/view/screens/services/controller/ServiceController.dart';
 import 'package:term/Feutcher/view/screens/services/model/serviceModel.dart';
 import 'package:term/helper/colors/colors.dart';
+import 'package:term/helper/contstant/scalesize.dart';
+
+import '../../../mainScreen/controller/mainScreenController/mainScreenController.dart';
+import '../../../side_menu/view/Screen/sied_menu.dart';
 
 class ServicesScreen extends StatelessWidget {
   const ServicesScreen({super.key});
@@ -14,8 +20,53 @@ class ServicesScreen extends StatelessWidget {
     size = MediaQuery.of(context).size;
     height = size.height;
     width = size.width;
+    final GlobalKey<ScaffoldState> _key = GlobalKey();
     return Scaffold(
+      key: _key,
       backgroundColor: Colors.black,
+      appBar: AppBar(
+        backgroundColor: Colors.transparent,
+        leading: IconButton(onPressed: (){
+          _key.currentState!.openDrawer();
+          // Get.toNamed('/sidemenu');
+        },icon: Icon(Icons.dashboard_rounded,color: kSecandrycolor,size: 35,),
+        ),
+        actions: [Image.asset(
+          'assets/images/logoWO.webp',
+          height: width * 0.13,
+        ),],
+
+      ),
+      drawer:  GetBuilder<MainScreenAnimatedControoler>(
+          init:MainScreenAnimatedControoler() ,
+          builder: (anim_controller) {
+            return GestureDetector(
+              onHorizontalDragEnd:(details){
+                if (details.velocity.pixelsPerSecond.dx > 0) {
+                  return;
+                }_key.currentState!.openDrawer();
+              } ,
+              child: Stack(
+                children: [
+                  BackdropFilter(
+                    filter: ImageFilter.blur(
+                      sigmaX: 7.0,
+                      sigmaY: 7.0,
+                    ),
+                    child: const SizedBox.expand(),
+                  ),
+                  SideMenuScreen(
+                    icon:Icon(Icons.close,color: Colors.white,size: 35,),
+                    press:(){
+                      _key.currentState!.closeDrawer();
+
+                      // Get.toNamed('/sidemenu');
+                    }, isActive: 'SERVICES', ),
+                ],
+              ),
+            );
+          }
+      ),
       body: SafeArea(
         child: GetBuilder<ServicesController>(
           init: ServicesController(),
@@ -27,20 +78,7 @@ class ServicesScreen extends StatelessWidget {
                   // mainAxisSize: MainAxisSize.max,
                   // mainAxisAlignment: MainAxisAlignment.start,
                   children: [
-                    Flexible(
-                      flex: 0,
-                      child: Align(
-                        alignment: FractionalOffset.topCenter,
-                        child: Container(
-                          margin: EdgeInsets.all(20),
-                          width: double.infinity,
-                          child: Image.asset(
-                            'assets/images/logoWO.webp',
-                            height: width * 0.2,
-                          ),
-                        ),
-                      ),
-                    ),
+
                     Flexible(
                       flex: 1,
                         fit: FlexFit.tight,
@@ -59,7 +97,8 @@ class ServicesScreen extends StatelessWidget {
                                 Text(
                                   '${serviceList[index].title}',
                                   textAlign: TextAlign.center,
-                                  style: Theme.of(context).textTheme.titleSmall!.copyWith(color: Colors.white),
+                                  textScaleFactor: ScaleSize.textScaleFactor(context),
+                                  style: Theme.of(context).textTheme.titleSmall!.copyWith(color: Colors.white,fontSize:width* 0.05),
                                 ),
                                 Flexible(
                                   child: Container(
@@ -179,19 +218,7 @@ class ServicesScreen extends StatelessWidget {
                     )
                   ],
                 ),
-                Positioned(
-                  left: 20,
-                  top: 40,
-                  child: IconButton(
-                    onPressed: () {
-                      Get.back();
-                    },
-                    icon: Icon(
-                      Icons.arrow_back_ios_new_rounded,
-                      color: Colors.white,
-                    ),
-                  ),
-                ),
+
               ],
             );
           },

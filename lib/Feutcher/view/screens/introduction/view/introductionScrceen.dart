@@ -1,19 +1,23 @@
-  import 'package:flutter/material.dart';
+  import 'package:auto_size_text/auto_size_text.dart';
+import 'package:flutter/material.dart';
   import 'package:get/get.dart';
   import 'package:get/get_connect/http/src/utils/utils.dart';
   import 'package:lottie/lottie.dart';
   import 'package:term/Feutcher/view/screens/introduction/controller/animationcontroller.dart';
   import 'package:term/helper/colors/colors.dart';
+import 'package:term/helper/contstant/scalesize.dart';
 
   class IntroductonScreen extends StatelessWidget {
     const IntroductonScreen({super.key});
 
     @override
     Widget build(BuildContext context) {
-      var size, height, width;
+      var size, height, width, fontsi;
       size = MediaQuery.of(context).size;
       height = size.height;
       width = size.width;
+      // fontsi = size;
+      double screenWidth = MediaQuery.of(context).size.width;
       return Scaffold(
           backgroundColor: kbackGroundcolor,
           body: GetBuilder<AnimateController>(
@@ -54,7 +58,9 @@
                       left: animtController.showmessage ? 10 : -200,
                       child: Text(
                         'Tadafuq Information\nTechnology and Elka',
-                        style: Theme.of(context).textTheme.bodySmall!.copyWith(color: Colors.white,fontSize: 8),
+                        textScaleFactor: ScaleSize.textScaleFactor(context),
+                        style: Theme.of(context).textTheme.bodySmall!.copyWith(color: Colors.white,fontSize:  screenWidth * 0.03),
+                        textAlign: TextAlign.center,
                       ),
                       duration: Duration(milliseconds: 750)),
                   AnimatedPositioned(
@@ -62,7 +68,9 @@
                       right: animtController.showmessage ? 10 : -200,
                       child: Text(
                         'Join Forces to\nCreate a New Era',
-                        style:Theme.of(context).textTheme.labelSmall!.copyWith(color: Colors.white,fontSize: 8),
+                        textScaleFactor: ScaleSize.textScaleFactor(context),
+                        style:Theme.of(context).textTheme.labelSmall!.copyWith(color: Colors.white,fontSize:  screenWidth * 0.03),
+                        textAlign: TextAlign.center,
                       ),
                       duration: Duration(milliseconds: 750)),
 
@@ -73,7 +81,8 @@
                         padding: const EdgeInsets.only(bottom: 16.0),
                         child: Text(
                           'Powered by Tadafuq',
-                          style: Theme.of(context).textTheme.labelSmall!.copyWith(color: Colors.white.withOpacity(0.5),fontSize: 8),
+                          textScaleFactor: ScaleSize.textScaleFactor(context),
+                          style: Theme.of(context).textTheme.labelSmall!.copyWith(color: Colors.white.withOpacity(0.5),fontSize:  screenWidth * 0.03),
                         ),
                       ),
                       duration: Duration(milliseconds: 750)),
@@ -136,7 +145,9 @@
                         left: animtController.showmessage ? 10 : -200,
                         child: Text(
                           'Tadafuq Information\nTechnology and Elka',
-                          style: Theme.of(context).textTheme.bodySmall!.copyWith(color: Colors.white,fontSize: 8),
+                          textScaleFactor: ScaleSize.textScaleFactor(context),
+                          style: Theme.of(context).textTheme.bodySmall!.copyWith(color: Colors.white,fontSize:  screenWidth * 0.03),
+                          textAlign: TextAlign.center ,
                         ),
                         duration: Duration(milliseconds: 750)),
                     AnimatedPositioned(
@@ -144,7 +155,10 @@
                         right: animtController.showmessage ? 10 : -200,
                         child: Text(
                           'Join Forces to\nCreate a New Era',
-                          style:Theme.of(context).textTheme.labelSmall!.copyWith(color: Colors.white,fontSize: 8),
+                          textScaleFactor: ScaleSize.textScaleFactor(context),
+                          style:Theme.of(context).textTheme.labelSmall!.copyWith(color: Colors.white,fontSize: screenWidth * 0.03),
+
+                          textAlign: TextAlign.center ,
                         ),
                         duration: Duration(milliseconds: 750)),
 
@@ -155,7 +169,11 @@
                           padding: const EdgeInsets.only(bottom: 16.0),
                           child: Text(
                             'Powered by Tadafuq',
-                            style: Theme.of(context).textTheme.labelSmall!.copyWith(color: Colors.white.withOpacity(0.5),fontSize: 8),
+                            textScaleFactor: ScaleSize.textScaleFactor(context),
+                            style: Theme.of(context).textTheme.labelSmall!.copyWith(color: Colors.white.withOpacity(0.5),fontSize: screenWidth * 0.03),
+                            textAlign: TextAlign.center,
+                            maxLines:1,
+                            overflow: TextOverflow.ellipsis,
                           ),
                         ),
                         duration: Duration(milliseconds: 750)),

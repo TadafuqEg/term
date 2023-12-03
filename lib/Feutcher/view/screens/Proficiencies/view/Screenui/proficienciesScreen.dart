@@ -1,9 +1,14 @@
+import 'dart:ui';
+
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:term/Feutcher/view/screens/Proficiencies/controller/proficienciesContr.dart';
 import 'package:term/Feutcher/view/screens/Proficiencies/model/Proficienciesmodel.dart';
 import 'package:term/Feutcher/view/screens/Proficiencies/view/widgits/container/container.dart';
+import 'package:term/Feutcher/view/screens/mainScreen/controller/mainScreenController/mainScreenController.dart';
 import 'package:term/helper/colors/colors.dart';
+
+import '../../../side_menu/view/Screen/sied_menu.dart';
 
 class ProficienciesSrceen extends StatelessWidget {
   const ProficienciesSrceen({super.key});
@@ -14,8 +19,53 @@ class ProficienciesSrceen extends StatelessWidget {
     size = MediaQuery.of(context).size;
     height = size.height;
     width = size.width;
+    final GlobalKey<ScaffoldState> _key = GlobalKey();
     return Scaffold(
+    key: _key,
+    appBar: AppBar(
+        backgroundColor: Colors.transparent,
+        leading: IconButton(onPressed: (){
+          _key.currentState!.openDrawer();
+          // Get.toNamed('/sidemenu');
+        },icon: Icon(Icons.dashboard_rounded,color: kSecandrycolor,size: 35,),
+        ),
+        actions: [Image.asset(
+          'assets/images/logoWO.webp',
+          height: width * 0.13,
+        ),],
+
+      ),
       backgroundColor: Colors.black,
+      drawer: GetBuilder<MainScreenAnimatedControoler>(
+          init:MainScreenAnimatedControoler() ,
+          builder: (anim_controller) {
+            return GestureDetector(
+              onHorizontalDragEnd:(details){
+                if (details.velocity.pixelsPerSecond.dx > 0) {
+                  return;
+                }_key.currentState!.openDrawer();
+              } ,
+              child: Stack(
+                children: [
+                  BackdropFilter(
+                    filter: ImageFilter.blur(
+                      sigmaX: 7.0,
+                      sigmaY: 7.0,
+                    ),
+                    child: const SizedBox.expand(),
+                  ),
+                  SideMenuScreen(
+                    icon:Icon(Icons.close,color: Colors.white,size: 35,),
+                    press:(){
+                      _key.currentState!.closeDrawer();
+
+                      // Get.toNamed('/sidemenu');
+                    }, isActive: 'PROFICIENCIES', ),
+                ],
+              ),
+            );
+          }
+      ),
       body: SafeArea(
           child: GetBuilder<ProficienciesController>(
         init: ProficienciesController(),
@@ -24,20 +74,7 @@ class ProficienciesSrceen extends StatelessWidget {
             children: [
               Column(
                 children: [
-                  Flexible(
-                    flex: 0,
-                    child: Align(
-                      alignment: FractionalOffset.topCenter,
-                      child: Container(
-                        margin: EdgeInsets.all(20),
-                        width: double.infinity,
-                        child: Image.asset(
-                          'assets/images/logoWO.webp',
-                          height: width * 0.2,
-                        ),
-                      ),
-                    ),
-                  ),
+
                   Flexible(
                       flex: 2,
                       fit: FlexFit.tight,
@@ -190,19 +227,7 @@ class ProficienciesSrceen extends StatelessWidget {
                   )
                 ],
               ),
-              Positioned(
-                left: 20,
-                top: 40,
-                child: IconButton(
-                  onPressed: () {
-                    Get.back();
-                  },
-                  icon: Icon(
-                    Icons.arrow_back_ios_new_rounded,
-                    color: Colors.white,
-                  ),
-                ),
-              ),
+
             ],
           );
         },

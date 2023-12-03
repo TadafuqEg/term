@@ -5,6 +5,7 @@ import 'package:term/Feutcher/view/screens/services/View/widgets/Container/conta
 import 'package:term/Feutcher/view/screens/services/View/widgets/Container/containerDetailes.dart';
 import 'package:term/Feutcher/view/screens/services/controller/ServiceDetController.dart';
 import 'package:term/helper/colors/colors.dart';
+import 'package:term/helper/contstant/scalesize.dart';
 
 class Servicedetailes extends StatelessWidget {
   const Servicedetailes({super.key});
@@ -79,8 +80,9 @@ class Servicedetailes extends StatelessWidget {
                             Flexible(
                                 flex: 0,
                                 child: Text(
+                                  textScaleFactor: ScaleSize.textScaleFactor(context),
                                   '${controller.selectdata[0].title}',
-                                  style: Theme.of(context).textTheme.titleSmall!.copyWith(color: Colors.white),
+                                  style: Theme.of(context).textTheme.titleSmall!.copyWith(color: Colors.white,fontSize:width* 0.05),
                                 )),
                             Flexible(
                               flex: 2,
@@ -102,7 +104,7 @@ class Servicedetailes extends StatelessWidget {
                                           padding: const EdgeInsets.only(
                                               left: 10.0, top: 10.0, right: 10),
                                           child: DefaultTextStyle(
-                                            style: Theme.of(context).textTheme.labelLarge!.copyWith(color: Colors.white),
+                                            style: Theme.of(context).textTheme.labelLarge!.copyWith(color: Colors.white,fontSize:width* 0.05),
                                             child:
                                                 AnimatedTextKit(
                                                   totalRepeatCount: 1,

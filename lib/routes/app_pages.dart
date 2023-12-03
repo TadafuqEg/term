@@ -1,6 +1,8 @@
 import 'package:get/get.dart';
 import 'package:term/Feutcher/controller/HomeScreenController/homeController.dart';
+import 'package:term/Feutcher/view/screens/ContactUs/view/Screen/ContactUs.dart';
 import 'package:term/Feutcher/view/screens/about/view/screenui/AboutScreen.dart';
+import 'package:term/Feutcher/view/screens/checkList/view/screen/checkListScreen.dart';
 import 'package:term/Feutcher/view/screens/homeScreen/homeScreen.dart';
 import 'package:term/Feutcher/view/screens/introduction/view/introductionScrceen.dart';
 import 'package:term/Feutcher/view/screens/mainScreen/mainScreen.dart';
@@ -19,6 +21,8 @@ class AppPages{
     GetPage(name: _Paths.SERVICES, page: ()=> ServicesScreen()),
     GetPage(name: _Paths.PROFICIENCIES, page: ()=> ProficienciesSrceen()),
     GetPage(name: _Paths.SERVICESDETAILES, page: ()=> Servicedetailes()),
-    GetPage(name: _Paths.SIDEMENU, page: ()=> SideMenuScreen()),
+    // GetPage(name: _Paths.SIDEMENU, page: ()=> SideMenuScreen()),
+    GetPage(name: _Paths.CONTACTUS, page: ()=>ContactUsScreen()),
+    GetPage(name: _Paths.CHECKLIST, page: ()=>CheckListScreen()),
   ];
 }

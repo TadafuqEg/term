@@ -22,6 +22,10 @@ class ServiceModel{
      id: 3  ,
      title: 'Taking Action\nand Amplifying\nResults',
      btn: btnActList
+   ),ServiceModel(
+     id: 4  ,
+     title: '',
+     btn: btnServiceList
    )
  ];
 
@@ -88,6 +92,23 @@ List<Btn> btnActList=[
   Btn(
     id: 10,
       btnTxt: 'Act More and more',
+      btnRoute: '/visuale'
+  ),
+];
+List<Btn> btnServiceList=[
+  Btn(
+    id: 11,
+      btnTxt: 'Service\nPresentation',
+      btnRoute: '/act'
+  ),
+  Btn(
+    id: 12,
+      btnTxt: 'Visual\nShowcase',
+      btnRoute: '/actmore'
+  ),
+  Btn(
+    id: 13,
+      btnTxt: 'User\nEngagement',
       btnRoute: '/visuale'
   ),
 ];

@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 57.88 65.66">
+  <defs>
+    <style>
+      .cls-1 {
+        filter: url(#drop-shadow-5);
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4, .cls-5, .cls-6, .cls-7, .cls-8, .cls-9 {
+        stroke-width: 0px;
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-6, .cls-7, .cls-8, .cls-9 {
+        fill: #e7b634;
+      }
+
+      .cls-10 {
+        clip-path: url(#clippath-2);
+      }
+
+      .cls-3 {
+        filter: url(#drop-shadow-4);
+      }
+
+      .cls-4 {
+        fill: none;
+      }
+
+      .cls-11 {
+        clip-path: url(#clippath-1);
+      }
+
+      .cls-12 {
+        clip-path: url(#clippath-4);
+      }
+
+      .cls-5 {
+        fill: #dadada;
+      }
+
+      .cls-6 {
+        filter: url(#drop-shadow-3);
+      }
+
+      .cls-7 {
+        filter: url(#drop-shadow-6);
+      }
+
+      .cls-8 {
+        filter: url(#drop-shadow-2);
+      }
+
+      .cls-13 {
+        clip-path: url(#clippath);
+      }
+
+      .cls-9 {
+        filter: url(#drop-shadow-1);
+      }
+
+      .cls-14 {
+        clip-path: url(#clippath-3);
+      }
+
+      .cls-15 {
+        clip-path: url(#clippath-5);
+      }
+    </style>
+    <clipPath id="clippath">
+      <path class="cls-4" d="m56.89,36.47c.76-2.82,1.1-5.8.96-8.89C57.16,12.69,45.1.67,30.21.03,13.49-.69-.26,12.79,0,29.41c.25,15.57,12.99,28.27,28.55,28.47,1.27.02,2.52-.05,3.75-.19,2.67-.31,5.2,1.37,5.93,3.96.24.86.43,1.77.55,2.73.15,1.23,1.69,1.73,2.53.81,7.95-8.67,13.41-18.75,15.56-28.72Z"/>
+    </clipPath>
+    <filter id="drop-shadow-1" filterUnits="userSpaceOnUse">
+      <feOffset dx="-10" dy="-10"/>
+      <feGaussianBlur result="blur" stdDeviation="7"/>
+      <feFlood flood-color="#b78600" flood-opacity=".75"/>
+      <feComposite in2="blur" operator="in"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <clipPath id="clippath-1">
+      <path class="cls-4" d="m56.89,36.47c.76-2.82,1.1-5.8.96-8.89C57.16,12.69,45.1.67,30.21.03,13.49-.69-.26,12.79,0,29.41c.25,15.57,12.99,28.27,28.55,28.47,1.27.02,2.52-.05,3.75-.19,2.67-.31,5.2,1.37,5.93,3.96.24.86.43,1.77.55,2.73.15,1.23,1.69,1.73,2.53.81,7.95-8.67,13.41-18.75,15.56-28.72Z"/>
+    </clipPath>
+    <filter id="drop-shadow-2" filterUnits="userSpaceOnUse">
+      <feOffset dx="10" dy="10"/>
+      <feGaussianBlur result="blur-2" stdDeviation="7"/>
+      <feFlood flood-color="#ffe8a9" flood-opacity=".75"/>
+      <feComposite in2="blur-2" operator="in"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <clipPath id="clippath-2">
+      <circle class="cls-4" cx="28.94" cy="42.3" r="4.07"/>
+    </clipPath>
+    <filter id="drop-shadow-3" filterUnits="userSpaceOnUse">
+      <feOffset dx="2.18" dy="2.18"/>
+      <feGaussianBlur result="blur-3" stdDeviation="2.18"/>
+      <feFlood flood-color="#fff" flood-opacity="1"/>
+      <feComposite in2="blur-3" operator="in"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <clipPath id="clippath-3">
+      <circle class="cls-4" cx="28.94" cy="42.3" r="4.07"/>
+    </clipPath>
+    <filter id="drop-shadow-4" filterUnits="userSpaceOnUse">
+      <feOffset dx="-2.18" dy="-2.18"/>
+      <feGaussianBlur result="blur-4" stdDeviation="2.18"/>
+      <feFlood flood-color="#b5b5b5" flood-opacity="1"/>
+      <feComposite in2="blur-4" operator="in"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <clipPath id="clippath-4">
+      <polygon class="cls-4" points="31.34 35.13 32.37 11.45 25.49 11.45 26.52 35.13 31.34 35.13"/>
+    </clipPath>
+    <filter id="drop-shadow-5" filterUnits="userSpaceOnUse">
+      <feOffset dx="-2" dy="-2"/>
+      <feGaussianBlur result="blur-5" stdDeviation="2"/>
+      <feFlood flood-color="#b5b5b5" flood-opacity="1"/>
+      <feComposite in2="blur-5" operator="in"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <clipPath id="clippath-5">
+      <polygon class="cls-4" points="31.34 35.13 32.37 11.45 25.49 11.45 26.52 35.13 31.34 35.13"/>
+    </clipPath>
+    <filter id="drop-shadow-6" filterUnits="userSpaceOnUse">
+      <feOffset dx="2" dy="2"/>
+      <feGaussianBlur result="blur-6" stdDeviation="2"/>
+      <feFlood flood-color="#fff" flood-opacity="1"/>
+      <feComposite in2="blur-6" operator="in"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Layer_1-2" data-name="Layer 1">
+    <g>
+      <path id="speech_bubble" data-name="speech bubble" class="cls-2" d="m56.89,36.47c.76-2.82,1.1-5.8.96-8.89C57.16,12.69,45.1.67,30.21.03,13.49-.69-.26,12.79,0,29.41c.25,15.57,12.99,28.27,28.55,28.47,1.27.02,2.52-.05,3.75-.19,2.67-.31,5.2,1.37,5.93,3.96.24.86.43,1.77.55,2.73.15,1.23,1.69,1.73,2.53.81,7.95-8.67,13.41-18.75,15.56-28.72Z"/>
+      <g id="dark_shadow" data-name="dark shadow">
+        <g class="cls-13">
+          <path class="cls-9" d="m66.65,27.17c-.43-9.4-4.37-18.26-11.07-24.95-6.71-6.68-15.58-10.59-24.98-10.99-.55-.02-1.1-.04-1.65-.04C18.74-8.81,9.19-4.81,2.03,2.46c-7.15,7.27-11,16.89-10.84,27.09.16,9.83,4.11,19.1,11.12,26.1,7.01,6.99,16.3,10.91,26.13,11.04.16,0,.33,0,.49,0,.44,0,.89,0,1.33-.02,1.12,4.52,5.22,7.8,9.99,7.8h0c2.86,0,5.62-1.21,7.56-3.33,9.01-9.82,15.1-21.09,17.63-32.6.97-3.7,1.37-7.52,1.2-11.37Zm-9.76,9.3c-2.16,9.97-7.61,20.05-15.56,28.72-.84.92-2.38.42-2.53-.81-.12-.96-.3-1.87-.55-2.73-.73-2.58-3.26-4.27-5.93-3.96-1.23.14-2.48.21-3.75.19C12.99,57.67.25,44.98,0,29.41-.26,12.79,13.49-.69,30.21.03c14.89.64,26.95,12.66,27.63,27.55.14,3.09-.2,6.07-.96,8.89Z"/>
+        </g>
+      </g>
+      <g>
+        <g id="light_shadow" data-name="light shadow">
+          <g class="cls-11">
+            <path class="cls-8" d="m66.65,27.17c-.43-9.4-4.37-18.26-11.07-24.95-6.71-6.68-15.58-10.59-24.98-10.99-.55-.02-1.1-.04-1.65-.04C18.74-8.81,9.19-4.81,2.03,2.46c-7.15,7.27-11,16.89-10.84,27.09.16,9.83,4.11,19.1,11.12,26.1,7.01,6.99,16.3,10.91,26.13,11.04.16,0,.33,0,.49,0,.44,0,.89,0,1.33-.02,1.12,4.52,5.22,7.8,9.99,7.8h0c2.86,0,5.62-1.21,7.56-3.33,9.01-9.82,15.1-21.09,17.63-32.6.97-3.7,1.37-7.52,1.2-11.37Zm-9.76,9.3c-2.16,9.97-7.61,20.05-15.56,28.72-.84.92-2.38.42-2.53-.81-.12-.96-.3-1.87-.55-2.73-.73-2.58-3.26-4.27-5.93-3.96-1.23.14-2.48.21-3.75.19C12.99,57.67.25,44.98,0,29.41-.26,12.79,13.49-.69,30.21.03c14.89.64,26.95,12.66,27.63,27.55.14,3.09-.2,6.07-.96,8.89Z"/>
+          </g>
+        </g>
+        <g id="icon">
+          <g id="circle">
+            <circle id="circle-2" data-name="circle" class="cls-5" cx="28.94" cy="42.3" r="4.07"/>
+            <g id="light_shadow-2" data-name="light shadow">
+              <g class="cls-10">
+                <path class="cls-6" d="m28.94,35.99c-3.48,0-6.31,2.83-6.31,6.31s2.83,6.31,6.31,6.31,6.31-2.83,6.31-6.31-2.83-6.31-6.31-6.31Zm0,10.38c-2.25,0-4.07-1.82-4.07-4.07s1.82-4.07,4.07-4.07,4.07,1.82,4.07,4.07-1.82,4.07-4.07,4.07Z"/>
+              </g>
+            </g>
+            <g id="dark_shadow-2" data-name="dark shadow">
+              <g class="cls-14">
+                <path class="cls-3" d="m28.94,35.99c-3.48,0-6.31,2.83-6.31,6.31s2.83,6.31,6.31,6.31,6.31-2.83,6.31-6.31-2.83-6.31-6.31-6.31Zm0,10.38c-2.25,0-4.07-1.82-4.07-4.07s1.82-4.07,4.07-4.07,4.07,1.82,4.07,4.07-1.82,4.07-4.07,4.07Z"/>
+              </g>
+            </g>
+          </g>
+          <g id="line">
+            <polygon id="line-2" data-name="line" class="cls-5" points="31.34 35.13 32.37 11.45 25.49 11.45 26.52 35.13 31.34 35.13"/>
+            <g id="dark_shadow-3" data-name="dark shadow">
+              <g class="cls-12">
+                <path class="cls-1" d="m23.34,9.39l1.21,27.8h8.76l1.21-27.8h-11.18Zm8,25.74h-4.82l-1.03-23.68h6.88l-1.03,23.68Z"/>
+              </g>
+            </g>
+            <g id="light_shadow-3" data-name="light shadow">
+              <g class="cls-15">
+                <path class="cls-7" d="m23.34,9.39l1.21,27.8h8.76l1.21-27.8h-11.18Zm8,25.74h-4.82l-1.03-23.68h6.88l-1.03,23.68Z"/>
+              </g>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

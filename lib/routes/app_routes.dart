@@ -10,6 +10,8 @@ abstract class Routes{
   static const PROFICIENCIES= _Paths.PROFICIENCIES;
   static const SERVICESDETAILES= _Paths.SERVICESDETAILES;
   static const SIDEMENU= _Paths.SIDEMENU;
+  static const CONTACTUS= _Paths.CONTACTUS;
+  static const CHECKLIST= _Paths.CHECKLIST;
   //ProficienciesSrceen
 }
 
@@ -22,4 +24,8 @@ abstract class _Paths{
   static const PROFICIENCIES= '/proficiencies';
   static const SERVICESDETAILES= '/servicesdetailes';
   static const SIDEMENU= '/sidemenu';
+  static const CONTACTUS= '/contactus';
+  static const CHECKLIST= '/checklist';
+
+
 }

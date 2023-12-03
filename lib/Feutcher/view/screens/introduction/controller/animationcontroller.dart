@@ -3,6 +3,7 @@ import 'dart:async';
 
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:term/Feutcher/view/screens/checkList/view/screen/checkListScreen.dart';
 
 import '../../mainScreen/mainScreen.dart';
 
@@ -47,6 +48,7 @@ class AnimateController extends GetxController with GetTickerProviderStateMixin{
      Timer(Duration(milliseconds: 3500),(){
        // imghide= true;
        Get.offAll(()=> MainScreen());
+       // Get.offAll(()=> CheckListScreen());
        // update();
      });
    }

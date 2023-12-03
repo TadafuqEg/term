@@ -84,4 +84,22 @@ List<ServiceDetailesModel> ServDetList = [
       description:
           'Lead generation helps you fill your funnel with quality prospects, while lead nurturing helps you convert them into loyal customers. Without lead generation, you won›t have enough leads to nurture, and without lead nurturing, you›ll lose leads to your competitors or to inaction.',
       imgsrc: 'assets/images/actmoreandmore.webp'),
+  ServiceDetailesModel(
+      id: 11,
+      title: '',
+      name: "Service Presentation",
+      description: "Organize services in a structured and intuitive manner for easy browsing and exploration. Implement filters or categories to help users find specific services.",
+      imgsrc: 'assets/images/ServicePresentation.webp'),
+  ServiceDetailesModel(
+      id: 12,
+      title: '',
+      name: "Visual Showcase",
+      description: "Create a visually appealing presentation of the services, including high-quality images and relevant details.Incorporate interactive elements, such as icons or illustrations, to visually represent each service.",
+      imgsrc: 'assets/images/VisualShowcase.webp'),
+  ServiceDetailesModel(
+      id: 13,
+      title: '',
+      name: "User Engagement",
+      description: "Provide clear and concise descriptions of each service, highlighting the benefits, features, and unique selling points.Include calls to action (CTAs) that encourage users to learn more or contact the company for inquiries.",
+      imgsrc: 'assets/images/UserEngagement.webp'),
 ];
